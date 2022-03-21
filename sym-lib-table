@@ -1,4 +1,3 @@
 (sym_lib_table
-  (lib (name Atari)(type Legacy)(uri D:/Jacek/Dokumenty/Kicad/Atari.lib)(options "")(descr ""))
-  (lib (name Jacek)(type Legacy)(uri D:/Jacek/Dokumenty/Kicad/Jacek.lib)(options "")(descr ""))
+  (lib (name Atari)(type Legacy)(uri C:/Users/jacek/OneDrive/Dokumenty/Kicad/Atari.lib)(options "")(descr ""))
 )
