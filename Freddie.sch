@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:Atari 130XE 1MB-cache
 EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
@@ -47,7 +46,7 @@ U 1 1 601F56A7
 P 6575 5650
 F 0 "C29" H 6690 5696 50  0000 L CNN
 F 1 "100nF" H 6690 5605 50  0000 L CNN
-F 2 "Atari:C_Axial_L5.1mm_D2.5mm_P12.50mm_Horizontal" H 6613 5500 50  0001 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 6613 5500 50  0001 C CNN
 F 3 "~" H 6575 5650 50  0001 C CNN
 	1    6575 5650
 	1    0    0    -1  
@@ -152,8 +151,8 @@ L Device:C C32
 U 1 1 601FA84E
 P 3325 1825
 F 0 "C32" V 3073 1825 50  0000 C CNN
-F 1 "22pF" V 3164 1825 50  0000 C CNN
-F 2 "Atari:C_Axial_L5.1mm_D2.5mm_P12.50mm_Horizontal" H 3363 1675 50  0001 C CNN
+F 1 "27pF" V 3164 1825 50  0000 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 3363 1675 50  0001 C CNN
 F 3 "~" H 3325 1825 50  0001 C CNN
 	1    3325 1825
 	0    1    1    0   
@@ -163,8 +162,8 @@ L Device:C C33
 U 1 1 601FCBA4
 P 3325 2575
 F 0 "C33" V 3073 2575 50  0000 C CNN
-F 1 "22pF" V 3164 2575 50  0000 C CNN
-F 2 "Atari:C_Axial_L5.1mm_D2.5mm_P12.50mm_Horizontal" H 3363 2425 50  0001 C CNN
+F 1 "27pF" V 3164 2575 50  0000 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 3363 2425 50  0001 C CNN
 F 3 "~" H 3325 2575 50  0001 C CNN
 	1    3325 2575
 	0    1    1    0   
@@ -203,7 +202,7 @@ U 1 1 602007A4
 P 4050 1825
 F 0 "R18" V 3843 1825 50  0000 C CNN
 F 1 "240" V 3934 1825 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 3980 1825 50  0001 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 3980 1825 50  0001 C CNN
 F 3 "~" H 4050 1825 50  0001 C CNN
 	1    4050 1825
 	0    1    1    0   
@@ -214,7 +213,7 @@ U 1 1 60200DFD
 P 4050 2575
 F 0 "R26" V 3843 2575 50  0000 C CNN
 F 1 "1M" V 3934 2575 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 3980 2575 50  0001 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 3980 2575 50  0001 C CNN
 F 3 "~" H 4050 2575 50  0001 C CNN
 	1    4050 2575
 	0    1    1    0   
@@ -264,7 +263,7 @@ U 1 1 6020CD1F
 P 7025 5500
 F 0 "FB103" V 6751 5500 50  0000 C CNN
 F 1 "Ferrite_Bead" V 6842 5500 50  0000 C CNN
-F 2 "Atari:L_Axial_L7.0mm_D3.3mm_P12.50mm_Horizontal_Fastron_MICC" V 6955 5500 50  0001 C CNN
+F 2 "Inductor_SMD:L_1812_4532Metric_Pad1.30x3.40mm_HandSolder" V 6955 5500 50  0001 C CNN
 F 3 "~" H 7025 5500 50  0001 C CNN
 	1    7025 5500
 	0    1    1    0   
@@ -338,31 +337,8 @@ Wire Wire Line
 Connection ~ 8575 2700
 Wire Wire Line
 	8575 2700 8650 2700
-$Comp
-L Connector_Generic:Conn_01x01 J100
-U 1 1 60200DF9
-P 2750 1825
-F 0 "J100" H 2668 1600 50  0000 C CNN
-F 1 "cond" H 2668 1691 50  0000 C CNN
-F 2 "Connector_PinHeader_2.00mm:PinHeader_1x01_P2.00mm_Vertical" H 2750 1825 50  0001 C CNN
-F 3 "~" H 2750 1825 50  0001 C CNN
-	1    2750 1825
-	-1   0    0    1   
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x01 J101
-U 1 1 60201647
-P 2750 2575
-F 0 "J101" H 2668 2350 50  0000 C CNN
-F 1 "cond" H 2668 2441 50  0000 C CNN
-F 2 "Connector_PinHeader_2.00mm:PinHeader_1x01_P2.00mm_Vertical" H 2750 2575 50  0001 C CNN
-F 3 "~" H 2750 2575 50  0001 C CNN
-	1    2750 2575
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	4200 1825 4200 2575
-Connection ~ 2950 1825
 $Comp
 L 74xx:74LS08 U18
 U 5 1 603127C5

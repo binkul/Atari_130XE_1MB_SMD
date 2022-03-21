@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:Atari 130XE 1MB-cache
 EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
@@ -14,47 +13,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L Atari:Modulator M1
-U 1 1 6019C6A1
-P 8525 1800
-F 0 "M1" V 8537 2628 50  0000 L CNN
-F 1 "Modulator" V 8628 2628 50  0000 L CNN
-F 2 "Atari:Modulator_TV" H 8525 1800 50  0001 C CNN
-F 3 "" H 8525 1800 50  0001 C CNN
-	1    8525 1800
-	0    1    1    0   
-$EndComp
-Text GLabel 6950 1500 0    50   Input ~ 0
-COMPOSITE
-Text GLabel 7825 1800 0    50   Input ~ 0
-COLOR
-Text GLabel 7825 1950 0    50   Input ~ 0
-MONO_MOD
-Wire Wire Line
-	8225 2500 8325 2500
-Wire Wire Line
-	8425 2500 8325 2500
-Connection ~ 8325 2500
-Wire Wire Line
-	8525 2500 8425 2500
-Connection ~ 8425 2500
-$Comp
-L power:GND #PWR0185
-U 1 1 602C5512
-P 8225 2650
-F 0 "#PWR0185" H 8225 2400 50  0001 C CNN
-F 1 "GND" H 8230 2477 50  0000 C CNN
-F 2 "" H 8225 2650 50  0001 C CNN
-F 3 "" H 8225 2650 50  0001 C CNN
-	1    8225 2650
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8225 2500 8225 2650
-Connection ~ 8225 2500
-Text GLabel 7825 1650 0    50   Input ~ 0
-RF_VCC
 $Comp
 L Timer:LM555 U19
 U 1 1 602FE634
@@ -624,9 +582,6 @@ Wire Wire Line
 	6450 2700 6200 2700
 Connection ~ 6200 2700
 Wire Wire Line
-	7825 2100 5350 2100
-Connection ~ 5350 2100
-Wire Wire Line
 	3575 3900 1775 3900
 $Comp
 L Device:R R5
@@ -703,19 +658,6 @@ F 3 "" H 1125 6475 50  0001 C CNN
 	1    1125 6475
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:Ferrite_Bead FB7
-U 1 1 60348FAD
-P 7100 1500
-F 0 "FB7" V 6826 1500 50  0000 C CNN
-F 1 "Ferrite_Bead" V 6917 1500 50  0000 C CNN
-F 2 "Atari:L_Axial_L7.0mm_D3.3mm_P12.50mm_Horizontal_Fastron_MICC" V 7030 1500 50  0001 C CNN
-F 3 "~" H 7100 1500 50  0001 C CNN
-	1    7100 1500
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	7250 1500 7500 1500
 Text GLabel 875  1625 0    50   Input ~ 0
 EXTAUDIO
 Wire Wire Line
@@ -781,30 +723,6 @@ F 3 "~" H 3625 1400 50  0001 C CNN
 	1    3625 1400
 	0    1    1    0   
 $EndComp
-$Comp
-L Connector_Generic:Conn_01x01 J22
-U 1 1 60DE4CF7
-P 5475 3275
-F 0 "J22" V 5439 3187 50  0000 R CNN
-F 1 "C" V 5348 3187 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 5475 3275 50  0001 C CNN
-F 3 "~" H 5475 3275 50  0001 C CNN
-	1    5475 3275
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:GND #PWR0293
-U 1 1 60DF1471
-P 5475 3575
-F 0 "#PWR0293" H 5475 3325 50  0001 C CNN
-F 1 "GND" H 5480 3402 50  0000 C CNN
-F 2 "" H 5475 3575 50  0001 C CNN
-F 3 "" H 5475 3575 50  0001 C CNN
-	1    5475 3575
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5475 3475 5475 3575
 Text GLabel 4025 5025 0    50   Input ~ 0
 MONO_MOD
 $Comp
@@ -965,13 +883,6 @@ Wire Wire Line
 Connection ~ 4500 6250
 Wire Wire Line
 	4500 6250 4500 6325
-Text GLabel 7500 1250 1    50   Input ~ 0
-COMPOSITE_A
-Wire Wire Line
-	7500 1250 7500 1500
-Connection ~ 7500 1500
-Wire Wire Line
-	7500 1500 7825 1500
 Text GLabel 4925 6250 2    50   Input ~ 0
 COMPOSITE_A
 $EndSCHEMATC

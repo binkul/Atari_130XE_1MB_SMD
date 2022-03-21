@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:Atari 130XE 1MB-cache
 EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
@@ -323,28 +322,6 @@ F 1 "Hole" H 3575 5455 50  0000 L CNN
 F 2 "Atari:Hole_4.4mm" H 3475 5500 50  0001 C CNN
 F 3 "~" H 3475 5500 50  0001 C CNN
 	1    3475 5500
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole H14
-U 1 1 6017E87C
-P 1750 6225
-F 0 "H14" H 1850 6271 50  0000 L CNN
-F 1 "Hole" H 1850 6180 50  0000 L CNN
-F 2 "MountingHole:MountingHole_4.5mm" H 1750 6225 50  0001 C CNN
-F 3 "~" H 1750 6225 50  0001 C CNN
-	1    1750 6225
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole H15
-U 1 1 6017EEA3
-P 2350 6225
-F 0 "H15" H 2450 6271 50  0000 L CNN
-F 1 "Hole" H 2450 6180 50  0000 L CNN
-F 2 "MountingHole:MountingHole_4.5mm" H 2350 6225 50  0001 C CNN
-F 3 "~" H 2350 6225 50  0001 C CNN
-	1    2350 6225
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
