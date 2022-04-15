@@ -832,39 +832,8 @@ $EndComp
 Wire Wire Line
 	4075 2675 4075 3000
 Connection ~ 4075 3000
-$Comp
-L Device:R R75
-U 1 1 604CC253
-P 4275 3150
-F 0 "R75" V 4275 3150 50  0000 C CNN
-F 1 "3k" V 4225 3325 50  0000 C CNN
-F 2 "Atari:R_Axial_DIN0207_L3.6mm_D2.2mm_P10.16mm_Horizontal" V 4205 3150 50  0001 C CNN
-F 3 "~" H 4275 3150 50  0001 C CNN
-	1    4275 3150
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	3300 3600 4275 3600
-Wire Wire Line
-	4275 3600 4275 3300
 Wire Wire Line
 	4275 3000 4075 3000
-$Comp
-L Device:R W1
-U 1 1 604D459A
-P 4575 3600
-F 0 "W1" V 4575 3600 50  0000 C CNN
-F 1 "0" V 4525 3775 50  0000 C CNN
-F 2 "Atari:R_Axial_DIN0207_L3.6mm_D2.2mm_P10.16mm_Horizontal" V 4505 3600 50  0001 C CNN
-F 3 "~" H 4575 3600 50  0001 C CNN
-	1    4575 3600
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	4275 3600 4425 3600
-Connection ~ 4275 3600
-Wire Wire Line
-	4725 3600 4725 3800
 Wire Wire Line
 	4725 3800 3300 3800
 $Comp
@@ -943,7 +912,6 @@ F 3 "" H 9375 3325 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	9375 3150 9375 3325
-Connection ~ 4725 3800
 $Comp
 L Device:R R76
 U 1 1 602A896D
@@ -1351,4 +1319,7 @@ Text GLabel 2225 6150 0    50   Input ~ 0
 DATA_IN
 Text GLabel 2225 6250 0    50   Input ~ 0
 DATA_OUT
+Wire Wire Line
+	3300 3600 3300 3700
+Connection ~ 3300 3700
 $EndSCHEMATC

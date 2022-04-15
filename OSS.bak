@@ -206,21 +206,8 @@ Wire Wire Line
 Connection ~ 3350 4575
 Wire Wire Line
 	3350 4575 3350 4875
-$Comp
-L 74xGxx:74LVC2G74 U105
-U 1 1 60B6D60A
-P 1425 4275
-F 0 "U105" H 1250 4475 50  0000 C CNN
-F 1 "74LVC2G74" H 1675 4475 50  0000 C CNN
-F 2 "Package_SO:TSSOP-8_3x3mm_P0.65mm" H 1425 4275 50  0001 C CNN
-F 3 "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf" H 1425 4275 50  0001 C CNN
-	1    1425 4275
-	1    0    0    -1  
-$EndComp
-Text GLabel 1675 4175 2    50   Input ~ 0
+Text GLabel 1725 4225 2    50   Input ~ 0
 A16
-Text GLabel 1175 4375 0    50   Input ~ 0
-D6XX
 $Comp
 L Device:CP C203
 U 1 1 60B72DDE
@@ -232,8 +219,6 @@ F 3 "~" H 1425 5225 50  0001 C CNN
 	1    1425 5225
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1425 4525 1425 4850
 $Comp
 L Device:R R508
 U 1 1 60B75B01
@@ -266,7 +251,6 @@ Wire Wire Line
 	1925 4850 1925 5300
 Wire Wire Line
 	1925 5300 2200 5300
-Connection ~ 1425 4850
 Wire Wire Line
 	1425 4850 1425 5075
 Connection ~ 2200 5300
@@ -314,10 +298,6 @@ F 3 "" H 725 5575 50  0001 C CNN
 	1    725  5575
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1175 4175 725  4175
-Wire Wire Line
-	725  4175 725  5575
 $Comp
 L Device:R R509
 U 1 1 60B7FC19
@@ -431,11 +411,6 @@ Wire Wire Line
 Wire Wire Line
 	2075 1550 2375 1550
 Wire Wire Line
-	1275 4425 1275 5375
-Wire Wire Line
-	1275 5375 1425 5375
-Connection ~ 1425 5375
-Wire Wire Line
 	5800 4275 5800 3575
 Wire Wire Line
 	5800 3575 4650 3575
@@ -459,15 +434,6 @@ OS
 Wire Wire Line
 	6500 4975 6725 4975
 Connection ~ 6725 4975
-Wire Wire Line
-	1275 4125 1275 3325
-Wire Wire Line
-	1425 3325 1425 3400
-Wire Wire Line
-	1425 3150 1425 3325
-Connection ~ 1425 3325
-Wire Wire Line
-	1275 3325 1425 3325
 $Comp
 L Device:C C99
 U 1 1 60E536F2
@@ -501,4 +467,110 @@ F 3 "" H 4150 5675 50  0001 C CNN
 	1    4150 5675
 	1    0    0    -1  
 $EndComp
+Text GLabel 1125 4325 0    50   Input ~ 0
+D6XX
+$Comp
+L 74xx:74HC74 U105
+U 1 1 625BCEA4
+P 1425 4325
+F 0 "U105" H 1225 4575 50  0000 C CNN
+F 1 "74HC74" H 1600 4575 50  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 1425 4325 50  0001 C CNN
+F 3 "74xx/74hc_hct74.pdf" H 1425 4325 50  0001 C CNN
+	1    1425 4325
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1425 3150 1425 3400
+Wire Wire Line
+	1425 4625 1425 4850
+Connection ~ 1425 4850
+Wire Wire Line
+	1125 4225 725  4225
+Wire Wire Line
+	725  4225 725  5575
+$Comp
+L 74xx:74HC74 U105
+U 2 1 625C595D
+P 2050 6775
+F 0 "U105" H 2050 7256 50  0000 C CNN
+F 1 "74HC74" H 2050 7165 50  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 2050 6775 50  0001 C CNN
+F 3 "74xx/74hc_hct74.pdf" H 2050 6775 50  0001 C CNN
+	2    2050 6775
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1750 6675 1750 6775
+$Comp
+L power:GND #PWR?
+U 1 1 625CD06F
+P 1750 7250
+F 0 "#PWR?" H 1750 7000 50  0001 C CNN
+F 1 "GND" H 1755 7077 50  0000 C CNN
+F 2 "" H 1750 7250 50  0001 C CNN
+F 3 "" H 1750 7250 50  0001 C CNN
+	1    1750 7250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1750 6775 1750 7250
+Connection ~ 1750 6775
+Wire Wire Line
+	2050 7075 2575 7075
+Wire Wire Line
+	2575 7075 2575 6475
+Wire Wire Line
+	2575 6475 2050 6475
+$Comp
+L power:+5VA #PWR?
+U 1 1 625D05EB
+P 2050 6225
+F 0 "#PWR?" H 2050 6075 50  0001 C CNN
+F 1 "+5VA" H 2065 6398 50  0000 C CNN
+F 2 "" H 2050 6225 50  0001 C CNN
+F 3 "" H 2050 6225 50  0001 C CNN
+	1    2050 6225
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2050 6225 2050 6475
+Connection ~ 2050 6475
+$Comp
+L 74xx:74HC74 U105
+U 3 1 625D3F8A
+P 3050 6775
+F 0 "U105" H 3280 6821 50  0000 L CNN
+F 1 "74HC74" H 3280 6730 50  0000 L CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 3050 6775 50  0001 C CNN
+F 3 "74xx/74hc_hct74.pdf" H 3050 6775 50  0001 C CNN
+	3    3050 6775
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 625D55B8
+P 3050 7275
+F 0 "#PWR?" H 3050 7025 50  0001 C CNN
+F 1 "GND" H 3055 7102 50  0000 C CNN
+F 2 "" H 3050 7275 50  0001 C CNN
+F 3 "" H 3050 7275 50  0001 C CNN
+	1    3050 7275
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3050 7175 3050 7275
+$Comp
+L power:+5VA #PWR?
+U 1 1 625D7801
+P 3050 6200
+F 0 "#PWR?" H 3050 6050 50  0001 C CNN
+F 1 "+5VA" H 3065 6373 50  0000 C CNN
+F 2 "" H 3050 6200 50  0001 C CNN
+F 3 "" H 3050 6200 50  0001 C CNN
+	1    3050 6200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3050 6200 3050 6375
 $EndSCHEMATC
