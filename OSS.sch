@@ -399,17 +399,11 @@ Wire Wire Line
 	2750 4475 3650 4475
 Wire Wire Line
 	2750 3075 2750 4475
-Wire Wire Line
-	2375 1650 2375 3075
-Wire Wire Line
-	2375 3075 2750 3075
 Connection ~ 2750 3075
 Wire Wire Line
 	1425 3825 2075 3825
 Wire Wire Line
-	2075 3825 2075 1550
-Wire Wire Line
-	2075 1550 2375 1550
+	2075 3825 2075 1650
 Wire Wire Line
 	5800 4275 5800 3575
 Wire Wire Line
@@ -573,4 +567,12 @@ F 3 "" H 3050 6200 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3050 6200 3050 6375
+Wire Wire Line
+	2250 3075 2250 1550
+Wire Wire Line
+	2250 1550 2375 1550
+Wire Wire Line
+	2250 3075 2750 3075
+Wire Wire Line
+	2375 1650 2075 1650
 $EndSCHEMATC

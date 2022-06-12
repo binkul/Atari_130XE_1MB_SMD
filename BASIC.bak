@@ -659,12 +659,6 @@ F 3 "~" H 9250 1000 50  0001 C CNN
 	1    9250 1000
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	10250 1650 9800 1650
-Wire Wire Line
-	10250 1750 9525 1750
-Wire Wire Line
-	10250 1850 9250 1850
 $Comp
 L power:+5VA #PWR0275
 U 1 1 60C0A5FA
@@ -702,26 +696,19 @@ Wire Wire Line
 	8675 1275 9250 1275
 Connection ~ 9250 1275
 Wire Wire Line
-	9250 1275 9250 1850
+	9250 1275 9250 1750
 Wire Wire Line
 	8675 1400 9525 1400
 Connection ~ 9525 1400
 Wire Wire Line
-	9525 1400 9525 1750
-Wire Wire Line
 	8675 1525 9800 1525
 Connection ~ 9800 1525
-Wire Wire Line
-	9800 1525 9800 1650
 Wire Wire Line
 	6875 4400 6875 1950
 Wire Wire Line
 	6875 1950 8975 1950
 Wire Wire Line
 	8975 1150 8975 1950
-Connection ~ 8975 1950
-Wire Wire Line
-	8975 1950 10250 1950
 Text GLabel 800  6350 0    50   Input ~ 0
 RD5
 Wire Wire Line
@@ -873,4 +860,21 @@ Wire Wire Line
 Wire Wire Line
 	7025 3600 7300 3600
 Connection ~ 7300 4500
+Wire Wire Line
+	9800 1950 10250 1950
+Wire Wire Line
+	9800 1525 9800 1950
+Wire Wire Line
+	8975 1950 9700 1950
+Wire Wire Line
+	9700 1950 9700 1650
+Wire Wire Line
+	9700 1650 10250 1650
+Connection ~ 8975 1950
+Wire Wire Line
+	9525 1850 10250 1850
+Wire Wire Line
+	9525 1400 9525 1850
+Wire Wire Line
+	10250 1750 9250 1750
 $EndSCHEMATC
