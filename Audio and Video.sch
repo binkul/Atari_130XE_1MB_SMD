@@ -507,7 +507,7 @@ Connection ~ 4500 6250
 Wire Wire Line
 	4500 6250 4500 6325
 Text GLabel 4925 6250 2    50   Input ~ 0
-COMPOSITE_A
+COMPOSITE
 Text GLabel 1900 3075 0    50   Input ~ 0
 EXTAUDIO
 Text GLabel 1900 2800 0    50   Input ~ 0
