@@ -80,13 +80,13 @@ F 3 "" H 5300 4975 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 4400 3300 0    50   Input ~ 0
-RAS
+RAS_out
 Text GLabel 4400 3500 0    50   Input ~ 0
 WRT
 Text GLabel 6225 3500 0    50   Input ~ 0
 WRT
 Text GLabel 6225 3300 0    50   Input ~ 0
-RAS
+RAS_out
 Text GLabel 5300 3800 2    50   Input ~ 0
 DQ0
 Text GLabel 5300 3900 2    50   Input ~ 0

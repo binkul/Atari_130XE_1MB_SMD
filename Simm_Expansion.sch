@@ -118,12 +118,12 @@ Wire Wire Line
 $Comp
 L Device:C C120
 U 1 1 608D8B94
-P 1275 6975
-F 0 "C120" H 1075 6875 50  0000 L CNN
-F 1 "100nF" H 1025 7050 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 1313 6825 50  0001 C CNN
-F 3 "~" H 1275 6975 50  0001 C CNN
-	1    1275 6975
+P 900 6475
+F 0 "C120" H 700 6375 50  0000 L CNN
+F 1 "100nF" H 650 6550 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 938 6325 50  0001 C CNN
+F 3 "~" H 900 6475 50  0001 C CNN
+	1    900  6475
 	1    0    0    -1  
 $EndComp
 Text GLabel 1575 4150 0    50   Input ~ 0
@@ -268,7 +268,7 @@ Connection ~ 6450 4575
 Wire Wire Line
 	6450 4575 6650 4575
 Text GLabel 1575 1275 0    50   Input ~ 0
-RAS
+RAS_out
 Wire Wire Line
 	1575 1275 3050 1275
 Wire Wire Line
@@ -387,52 +387,52 @@ $EndComp
 $Comp
 L Device:C C121
 U 1 1 60926CB3
-P 1625 6975
-F 0 "C121" H 1400 6875 50  0000 L CNN
-F 1 "100nF" H 1375 7050 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 1663 6825 50  0001 C CNN
-F 3 "~" H 1625 6975 50  0001 C CNN
-	1    1625 6975
+P 1250 6475
+F 0 "C121" H 1025 6375 50  0000 L CNN
+F 1 "100nF" H 1000 6550 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 1288 6325 50  0001 C CNN
+F 3 "~" H 1250 6475 50  0001 C CNN
+	1    1250 6475
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C C122
 U 1 1 609271FB
-P 1975 6975
-F 0 "C122" H 1750 6875 50  0000 L CNN
-F 1 "100nF" H 1725 7050 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 2013 6825 50  0001 C CNN
-F 3 "~" H 1975 6975 50  0001 C CNN
-	1    1975 6975
+P 1600 6475
+F 0 "C122" H 1375 6375 50  0000 L CNN
+F 1 "100nF" H 1350 6550 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 1638 6325 50  0001 C CNN
+F 3 "~" H 1600 6475 50  0001 C CNN
+	1    1600 6475
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1275 7125 1625 7125
+	900  6625 1250 6625
 Wire Wire Line
-	1625 7125 1975 7125
-Connection ~ 1625 7125
+	1250 6625 1600 6625
+Connection ~ 1250 6625
 Wire Wire Line
-	1275 6825 1625 6825
+	900  6325 1250 6325
 Wire Wire Line
-	1975 6825 1625 6825
-Connection ~ 1625 6825
+	1600 6325 1250 6325
+Connection ~ 1250 6325
 $Comp
 L Device:CP C123
 U 1 1 6092F1F3
-P 2275 6975
-F 0 "C123" H 2075 6875 50  0000 L CNN
-F 1 "100uF" H 2175 7200 50  0000 L CNN
-F 2 "Capacitor_SMD:CP_Elec_6.3x9.9" H 2313 6825 50  0001 C CNN
-F 3 "~" H 2275 6975 50  0001 C CNN
-	1    2275 6975
+P 1900 6475
+F 0 "C123" H 1700 6375 50  0000 L CNN
+F 1 "100uF" H 1800 6700 50  0000 L CNN
+F 2 "Capacitor_SMD:CP_Elec_6.3x9.9" H 1938 6325 50  0001 C CNN
+F 3 "~" H 1900 6475 50  0001 C CNN
+	1    1900 6475
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1975 6825 2275 6825
-Connection ~ 1975 6825
+	1600 6325 1900 6325
+Connection ~ 1600 6325
 Wire Wire Line
-	1975 7125 2275 7125
-Connection ~ 1975 7125
+	1600 6625 1900 6625
+Connection ~ 1600 6625
 Text GLabel 7650 1400 2    50   Input ~ 0
 MAP
 Text GLabel 7650 1600 2    50   Input ~ 0
@@ -646,63 +646,63 @@ RA7
 $Comp
 L Device:C C124
 U 1 1 6097486E
-P 2600 6975
-F 0 "C124" H 2375 6875 50  0000 L CNN
-F 1 "100nF" H 2350 7050 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 2638 6825 50  0001 C CNN
-F 3 "~" H 2600 6975 50  0001 C CNN
-	1    2600 6975
+P 2225 6475
+F 0 "C124" H 2000 6375 50  0000 L CNN
+F 1 "100nF" H 1975 6550 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 2263 6325 50  0001 C CNN
+F 3 "~" H 2225 6475 50  0001 C CNN
+	1    2225 6475
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C C125
 U 1 1 609756C6
-P 2950 6975
-F 0 "C125" H 2725 6875 50  0000 L CNN
-F 1 "100nF" H 2700 7050 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 2988 6825 50  0001 C CNN
-F 3 "~" H 2950 6975 50  0001 C CNN
-	1    2950 6975
+P 2575 6475
+F 0 "C125" H 2350 6375 50  0000 L CNN
+F 1 "100nF" H 2325 6550 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 2613 6325 50  0001 C CNN
+F 3 "~" H 2575 6475 50  0001 C CNN
+	1    2575 6475
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2275 6825 2600 6825
-Connection ~ 2275 6825
+	1900 6325 2225 6325
+Connection ~ 1900 6325
 Wire Wire Line
-	2600 6825 2950 6825
-Connection ~ 2600 6825
+	2225 6325 2575 6325
+Connection ~ 2225 6325
 Wire Wire Line
-	2275 7125 2600 7125
-Connection ~ 2275 7125
+	1900 6625 2225 6625
+Connection ~ 1900 6625
 Wire Wire Line
-	2600 7125 2950 7125
-Connection ~ 2600 7125
+	2225 6625 2575 6625
+Connection ~ 2225 6625
 $Comp
 L power:GND #PWR0266
 U 1 1 609854DB
-P 1975 7300
-F 0 "#PWR0266" H 1975 7050 50  0001 C CNN
-F 1 "GND" H 1980 7127 50  0000 C CNN
-F 2 "" H 1975 7300 50  0001 C CNN
-F 3 "" H 1975 7300 50  0001 C CNN
-	1    1975 7300
+P 1600 6800
+F 0 "#PWR0266" H 1600 6550 50  0001 C CNN
+F 1 "GND" H 1605 6627 50  0000 C CNN
+F 2 "" H 1600 6800 50  0001 C CNN
+F 3 "" H 1600 6800 50  0001 C CNN
+	1    1600 6800
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+5VA #PWR0267
 U 1 1 60985A3D
-P 1975 6625
-F 0 "#PWR0267" H 1975 6475 50  0001 C CNN
-F 1 "+5VA" H 1990 6798 50  0000 C CNN
-F 2 "" H 1975 6625 50  0001 C CNN
-F 3 "" H 1975 6625 50  0001 C CNN
-	1    1975 6625
+P 1600 6125
+F 0 "#PWR0267" H 1600 5975 50  0001 C CNN
+F 1 "+5VA" H 1615 6298 50  0000 C CNN
+F 2 "" H 1600 6125 50  0001 C CNN
+F 3 "" H 1600 6125 50  0001 C CNN
+	1    1600 6125
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1975 6625 1975 6825
+	1600 6125 1600 6325
 Wire Wire Line
-	1975 7125 1975 7300
+	1600 6625 1600 6800
 $Comp
 L Device:R R110
 U 1 1 6099069A
@@ -747,4 +747,211 @@ Wire Wire Line
 Wire Wire Line
 	2475 2825 3200 2825
 Connection ~ 2475 5000
+$Comp
+L 74xx:74HC04 U45
+U 2 1 62CBBA35
+P 3875 6000
+F 0 "U45" H 3875 6317 50  0000 C CNN
+F 1 "74HC04" H 3875 6226 50  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 3875 6000 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 3875 6000 50  0001 C CNN
+	2    3875 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74HC04 U45
+U 3 1 62CBCA25
+P 3875 6350
+F 0 "U45" H 3875 6667 50  0000 C CNN
+F 1 "74HC04" H 3875 6576 50  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 3875 6350 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 3875 6350 50  0001 C CNN
+	3    3875 6350
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74HC04 U45
+U 4 1 62CBD8B5
+P 3875 7425
+F 0 "U45" H 3875 7742 50  0000 C CNN
+F 1 "74HC04" H 3875 7651 50  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 3875 7425 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 3875 7425 50  0001 C CNN
+	4    3875 7425
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74HC04 U45
+U 5 1 62CBE522
+P 3875 7050
+F 0 "U45" H 3875 7367 50  0000 C CNN
+F 1 "74HC04" H 3875 7276 50  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 3875 7050 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 3875 7050 50  0001 C CNN
+	5    3875 7050
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74HC04 U45
+U 6 1 62CBEB7E
+P 3875 6700
+F 0 "U45" H 3875 7017 50  0000 C CNN
+F 1 "74HC04" H 3875 6926 50  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 3875 6700 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 3875 6700 50  0001 C CNN
+	6    3875 6700
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74HC04 U45
+U 7 1 62CC0403
+P 6125 6950
+F 0 "U45" H 6355 6996 50  0000 L CNN
+F 1 "74HC04" H 6355 6905 50  0000 L CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 6125 6950 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 6125 6950 50  0001 C CNN
+	7    6125 6950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0241
+U 1 1 62CC2370
+P 6125 7550
+F 0 "#PWR0241" H 6125 7300 50  0001 C CNN
+F 1 "GND" H 6130 7377 50  0000 C CNN
+F 2 "" H 6125 7550 50  0001 C CNN
+F 3 "" H 6125 7550 50  0001 C CNN
+	1    6125 7550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6125 7450 6125 7550
+$Comp
+L power:+5VA #PWR0242
+U 1 1 62CC75E9
+P 6125 6350
+F 0 "#PWR0242" H 6125 6200 50  0001 C CNN
+F 1 "+5VA" H 6140 6523 50  0000 C CNN
+F 2 "" H 6125 6350 50  0001 C CNN
+F 3 "" H 6125 6350 50  0001 C CNN
+	1    6125 6350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6125 6350 6125 6450
+$Comp
+L 74xx:74HC04 U45
+U 1 1 62CB8D4A
+P 3875 5650
+F 0 "U45" H 3875 5967 50  0000 C CNN
+F 1 "74HC04" H 3875 5876 50  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 3875 5650 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 3875 5650 50  0001 C CNN
+	1    3875 5650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3575 6000 3575 5825
+Wire Wire Line
+	3575 5825 4175 5825
+Wire Wire Line
+	4175 5825 4175 5650
+Wire Wire Line
+	3575 6350 3575 6175
+Wire Wire Line
+	3575 6175 4175 6175
+Wire Wire Line
+	4175 6175 4175 6075
+Wire Wire Line
+	3575 6700 3575 6525
+Wire Wire Line
+	3575 6525 4175 6525
+Wire Wire Line
+	4175 6525 4175 6350
+Wire Wire Line
+	3575 7050 3575 6875
+Wire Wire Line
+	3575 6875 4175 6875
+Wire Wire Line
+	4175 6875 4175 6775
+Wire Wire Line
+	3575 7425 3575 7225
+Wire Wire Line
+	3575 7225 4175 7225
+Wire Wire Line
+	4175 7225 4175 7050
+Text GLabel 3575 5650 0    50   Input ~ 0
+RAS
+$Comp
+L Jumper:SolderJumper_2_Open JP1
+U 1 1 62D065C5
+P 4675 6075
+F 0 "JP1" H 4675 6280 50  0000 C CNN
+F 1 "SolderJumper_2_Open" H 4675 6189 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 4675 6075 50  0001 C CNN
+F 3 "~" H 4675 6075 50  0001 C CNN
+	1    4675 6075
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4525 6075 4175 6075
+Connection ~ 4175 6075
+Wire Wire Line
+	4175 6075 4175 6000
+Text GLabel 5200 6075 2    50   Input ~ 0
+RAS_out
+Wire Wire Line
+	4825 6075 5200 6075
+$Comp
+L Jumper:SolderJumper_2_Open JP2
+U 1 1 62D17E6A
+P 4675 6775
+F 0 "JP2" H 4675 6980 50  0000 C CNN
+F 1 "SolderJumper_2_Open" H 4675 6889 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 4675 6775 50  0001 C CNN
+F 3 "~" H 4675 6775 50  0001 C CNN
+	1    4675 6775
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Open JP3
+U 1 1 62D186E5
+P 4675 7425
+F 0 "JP3" H 4675 7630 50  0000 C CNN
+F 1 "SolderJumper_2_Open" H 4675 7539 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 4675 7425 50  0001 C CNN
+F 3 "~" H 4675 7425 50  0001 C CNN
+	1    4675 7425
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4525 6775 4175 6775
+Connection ~ 4175 6775
+Wire Wire Line
+	4175 6775 4175 6700
+Text GLabel 5200 6775 2    50   Input ~ 0
+RAS_out
+Text GLabel 5200 7425 2    50   Input ~ 0
+RAS_out
+Wire Wire Line
+	5200 7425 4825 7425
+Wire Wire Line
+	4825 6775 5200 6775
+$Comp
+L Jumper:SolderJumper_2_Open JP4
+U 1 1 62D329BE
+P 4675 5225
+F 0 "JP4" H 4675 5430 50  0000 C CNN
+F 1 "SolderJumper_2_Open" H 4675 5339 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 4675 5225 50  0001 C CNN
+F 3 "~" H 4675 5225 50  0001 C CNN
+	1    4675 5225
+	1    0    0    -1  
+$EndComp
+Text GLabel 4525 5225 0    50   Input ~ 0
+RAS
+Text GLabel 4825 5225 2    50   Input ~ 0
+RAS_out
+Wire Wire Line
+	4525 7425 4175 7425
 $EndSCHEMATC
