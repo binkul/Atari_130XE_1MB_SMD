@@ -861,8 +861,6 @@ Wire Wire Line
 Wire Wire Line
 	3575 6175 4175 6175
 Wire Wire Line
-	4175 6175 4175 6075
-Wire Wire Line
 	3575 6700 3575 6525
 Wire Wire Line
 	3575 6525 4175 6525
@@ -873,8 +871,6 @@ Wire Wire Line
 Wire Wire Line
 	3575 6875 4175 6875
 Wire Wire Line
-	4175 6875 4175 6775
-Wire Wire Line
 	3575 7425 3575 7225
 Wire Wire Line
 	3575 7225 4175 7225
@@ -882,76 +878,54 @@ Wire Wire Line
 	4175 7225 4175 7050
 Text GLabel 3575 5650 0    50   Input ~ 0
 RAS
-$Comp
-L Jumper:SolderJumper_2_Open JP1
-U 1 1 62D065C5
-P 4675 6075
-F 0 "JP1" H 4675 6280 50  0000 C CNN
-F 1 "SolderJumper_2_Open" H 4675 6189 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 4675 6075 50  0001 C CNN
-F 3 "~" H 4675 6075 50  0001 C CNN
-	1    4675 6075
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4525 6075 4175 6075
-Connection ~ 4175 6075
-Wire Wire Line
-	4175 6075 4175 6000
-Text GLabel 5200 6075 2    50   Input ~ 0
+Text GLabel 5175 6650 2    50   Input ~ 0
 RAS_out
-Wire Wire Line
-	4825 6075 5200 6075
-$Comp
-L Jumper:SolderJumper_2_Open JP2
-U 1 1 62D17E6A
-P 4675 6775
-F 0 "JP2" H 4675 6980 50  0000 C CNN
-F 1 "SolderJumper_2_Open" H 4675 6889 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 4675 6775 50  0001 C CNN
-F 3 "~" H 4675 6775 50  0001 C CNN
-	1    4675 6775
-	1    0    0    -1  
-$EndComp
-$Comp
-L Jumper:SolderJumper_2_Open JP3
-U 1 1 62D186E5
-P 4675 7425
-F 0 "JP3" H 4675 7630 50  0000 C CNN
-F 1 "SolderJumper_2_Open" H 4675 7539 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 4675 7425 50  0001 C CNN
-F 3 "~" H 4675 7425 50  0001 C CNN
-	1    4675 7425
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4525 6775 4175 6775
-Connection ~ 4175 6775
-Wire Wire Line
-	4175 6775 4175 6700
-Wire Wire Line
-	4525 7425 4175 7425
-Text GLabel 5200 6775 2    50   Input ~ 0
-RAS_out
-Text GLabel 5200 7425 2    50   Input ~ 0
-RAS_out
-Wire Wire Line
-	5200 7425 4825 7425
-Wire Wire Line
-	4825 6775 5200 6775
-$Comp
-L Jumper:SolderJumper_2_Open JP4
-U 1 1 62D329BE
-P 4675 5225
-F 0 "JP4" H 4675 5430 50  0000 C CNN
-F 1 "SolderJumper_2_Open" H 4675 5339 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 4675 5225 50  0001 C CNN
-F 3 "~" H 4675 5225 50  0001 C CNN
-	1    4675 5225
-	1    0    0    -1  
-$EndComp
-Text GLabel 4525 5225 0    50   Input ~ 0
+Text GLabel 4450 5825 0    50   Input ~ 0
 RAS
-Text GLabel 4825 5225 2    50   Input ~ 0
-RAS_out
+$Comp
+L Connector_Generic:Conn_02x04_Odd_Even J12
+U 1 1 62D4E5EC
+P 4650 6450
+F 0 "J12" H 4700 6767 50  0000 C CNN
+F 1 "Conn_02x04_Odd_Even" H 4700 6676 50  0000 C CNN
+F 2 "Connector_PinHeader_2.00mm:PinHeader_2x04_P2.00mm_Vertical" H 4650 6450 50  0001 C CNN
+F 3 "~" H 4650 6450 50  0001 C CNN
+	1    4650 6450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4175 6700 4175 6875
+Wire Wire Line
+	4175 6700 4300 6700
+Wire Wire Line
+	4300 6700 4300 6550
+Wire Wire Line
+	4300 6550 4450 6550
+Connection ~ 4175 6700
+Wire Wire Line
+	4175 7425 4450 7425
+Wire Wire Line
+	4450 7425 4450 6650
+Wire Wire Line
+	4175 6175 4300 6175
+Wire Wire Line
+	4300 6175 4300 6450
+Wire Wire Line
+	4300 6450 4450 6450
+Connection ~ 4175 6175
+Wire Wire Line
+	4175 6000 4175 6175
+Wire Wire Line
+	4450 5825 4450 6350
+Wire Wire Line
+	4950 6350 4950 6450
+Wire Wire Line
+	4950 6450 4950 6550
+Connection ~ 4950 6450
+Wire Wire Line
+	4950 6550 4950 6650
+Connection ~ 4950 6550
+Wire Wire Line
+	4950 6650 5175 6650
+Connection ~ 4950 6650
 $EndSCHEMATC
