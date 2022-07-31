@@ -4,7 +4,7 @@ EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 16 16
+Sheet 16 17
 Title ""
 Date ""
 Rev ""
@@ -880,52 +880,56 @@ Text GLabel 3575 5650 0    50   Input ~ 0
 RAS
 Text GLabel 5175 6650 2    50   Input ~ 0
 RAS_out
-Text GLabel 4450 5825 0    50   Input ~ 0
+Text GLabel 5175 6800 2    50   Input ~ 0
 RAS
 $Comp
 L Connector_Generic:Conn_02x04_Odd_Even J12
 U 1 1 62D4E5EC
-P 4650 6450
-F 0 "J12" H 4700 6767 50  0000 C CNN
-F 1 "Conn_02x04_Odd_Even" H 4700 6676 50  0000 C CNN
-F 2 "Connector_PinHeader_2.00mm:PinHeader_2x04_P2.00mm_Vertical" H 4650 6450 50  0001 C CNN
-F 3 "~" H 4650 6450 50  0001 C CNN
-	1    4650 6450
-	1    0    0    -1  
+P 4750 6550
+F 0 "J12" H 4800 6125 50  0000 C CNN
+F 1 "Conn_02x04_Odd_Even" H 4800 6216 50  0000 C CNN
+F 2 "Connector_PinHeader_2.00mm:PinHeader_2x04_P2.00mm_Vertical" H 4750 6550 50  0001 C CNN
+F 3 "~" H 4750 6550 50  0001 C CNN
+	1    4750 6550
+	-1   0    0    1   
 $EndComp
 Wire Wire Line
 	4175 6700 4175 6875
 Wire Wire Line
 	4175 6700 4300 6700
-Wire Wire Line
-	4300 6700 4300 6550
-Wire Wire Line
-	4300 6550 4450 6550
 Connection ~ 4175 6700
 Wire Wire Line
-	4175 7425 4450 7425
-Wire Wire Line
-	4450 7425 4450 6650
-Wire Wire Line
 	4175 6175 4300 6175
-Wire Wire Line
-	4300 6175 4300 6450
-Wire Wire Line
-	4300 6450 4450 6450
 Connection ~ 4175 6175
 Wire Wire Line
 	4175 6000 4175 6175
 Wire Wire Line
-	4450 5825 4450 6350
+	4950 6650 5175 6650
+Wire Wire Line
+	4950 6550 4950 6650
+Connection ~ 4950 6650
 Wire Wire Line
 	4950 6350 4950 6450
 Wire Wire Line
 	4950 6450 4950 6550
 Connection ~ 4950 6450
-Wire Wire Line
-	4950 6550 4950 6650
 Connection ~ 4950 6550
 Wire Wire Line
-	4950 6650 5175 6650
-Connection ~ 4950 6650
+	4300 6450 4450 6450
+Wire Wire Line
+	4300 6450 4300 6700
+Wire Wire Line
+	4300 6175 4300 6350
+Wire Wire Line
+	4300 6350 4450 6350
+Wire Wire Line
+	4175 7425 4375 7425
+Wire Wire Line
+	4375 7425 4375 6550
+Wire Wire Line
+	4375 6550 4450 6550
+Wire Wire Line
+	5175 6800 4450 6800
+Wire Wire Line
+	4450 6800 4450 6650
 $EndSCHEMATC

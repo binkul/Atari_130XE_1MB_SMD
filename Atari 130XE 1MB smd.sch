@@ -4,7 +4,7 @@ EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 16
+Sheet 1 17
 Title ""
 Date ""
 Rev ""
@@ -103,5 +103,11 @@ S 4250 4475 1225 1175
 U 608C5BD8
 F0 "Simm Expansion" 50
 F1 "Simm_Expansion.sch" 50
+$EndSheet
+$Sheet
+S 5850 4475 1225 1175
+U 62DF8815
+F0 "SIO2SD" 50
+F1 "SIO2SD.sch" 50
 $EndSheet
 $EndSCHEMATC
