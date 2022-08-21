@@ -278,15 +278,13 @@ F 3 "" H 8650 4275 40  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6350 4225 7700 4225
+	6350 4225 6975 4225
 Wire Wire Line
-	6350 4325 7025 4325
+	6350 4325 6825 4325
 Wire Wire Line
 	7025 4325 7025 4025
 Wire Wire Line
 	7025 4025 7700 4025
-Wire Wire Line
-	6350 4425 7175 4425
 Wire Wire Line
 	7175 4425 7175 3925
 Wire Wire Line
@@ -298,7 +296,7 @@ Wire Wire Line
 Wire Wire Line
 	5025 6175 7300 6175
 Wire Wire Line
-	7300 6175 7300 4425
+	7300 6175 7300 5775
 Wire Wire Line
 	7300 4425 7700 4425
 Wire Wire Line
@@ -307,8 +305,6 @@ Wire Wire Line
 	4900 4625 4900 6300
 Wire Wire Line
 	4900 6300 7425 6300
-Wire Wire Line
-	7425 6300 7425 4675
 Wire Wire Line
 	7425 4675 7700 4675
 Wire Wire Line
@@ -381,7 +377,7 @@ $EndComp
 Wire Wire Line
 	5350 5125 5175 5125
 Wire Wire Line
-	7700 4125 6475 4125
+	7700 4125 6900 4125
 Wire Wire Line
 	7700 4325 7550 4325
 Wire Wire Line
@@ -944,10 +940,10 @@ Wire Wire Line
 Wire Wire Line
 	10175 4450 10425 4450
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0311
 U 1 1 6306756B
 P 10425 4600
-F 0 "#PWR?" H 10425 4350 50  0001 C CNN
+F 0 "#PWR0311" H 10425 4350 50  0001 C CNN
 F 1 "GND" H 10430 4427 50  0000 C CNN
 F 2 "" H 10425 4600 50  0001 C CNN
 F 3 "" H 10425 4600 50  0001 C CNN
@@ -960,10 +956,10 @@ Connection ~ 10425 4450
 Wire Wire Line
 	10425 4450 10650 4450
 $Comp
-L power:+3.3V #PWR?
+L power:+3.3V #PWR0312
 U 1 1 6306F659
 P 10400 4025
-F 0 "#PWR?" H 10400 3875 50  0001 C CNN
+F 0 "#PWR0312" H 10400 3875 50  0001 C CNN
 F 1 "+3.3V" H 10415 4198 50  0000 C CNN
 F 2 "" H 10400 4025 50  0001 C CNN
 F 3 "" H 10400 4025 50  0001 C CNN
@@ -975,4 +971,64 @@ Wire Wire Line
 Connection ~ 10400 4150
 Wire Wire Line
 	10400 4150 10650 4150
+$Comp
+L Connector_Generic:Conn_01x07 J213
+U 1 1 63031993
+P 6550 5475
+F 0 "J213" H 6468 4950 50  0000 C CNN
+F 1 "SD_conn" H 6468 5041 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x07_P2.54mm_Vertical" H 6550 5475 50  0001 C CNN
+F 3 "~" H 6550 5475 50  0001 C CNN
+	1    6550 5475
+	-1   0    0    1   
+$EndComp
+Connection ~ 6825 4325
+Wire Wire Line
+	6825 4325 7025 4325
+Connection ~ 6900 4125
+Wire Wire Line
+	6900 4125 6475 4125
+Connection ~ 6975 4225
+Wire Wire Line
+	6975 4225 7700 4225
+Connection ~ 7550 4325
+Wire Wire Line
+	7425 4675 7425 5275
+Wire Wire Line
+	6750 5775 7300 5775
+Connection ~ 7300 5775
+Wire Wire Line
+	7300 5775 7300 4425
+Wire Wire Line
+	6975 5675 6750 5675
+Wire Wire Line
+	6975 4225 6975 5675
+Wire Wire Line
+	6750 5575 6900 5575
+Wire Wire Line
+	6900 4125 6900 5575
+Wire Wire Line
+	6825 5475 6750 5475
+Wire Wire Line
+	6825 4325 6825 5475
+Wire Wire Line
+	6350 4425 6450 4425
+Wire Wire Line
+	6450 4425 6450 5375
+Wire Wire Line
+	6450 5375 6750 5375
+Connection ~ 6450 4425
+Wire Wire Line
+	6450 4425 7175 4425
+Wire Wire Line
+	6750 5275 7425 5275
+Connection ~ 7425 5275
+Wire Wire Line
+	7425 5275 7425 6300
+Wire Wire Line
+	7125 4325 7125 5175
+Wire Wire Line
+	7125 5175 6750 5175
+Wire Wire Line
+	7125 4325 7550 4325
 $EndSCHEMATC
